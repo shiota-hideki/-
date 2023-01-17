@@ -1,5 +1,8 @@
-| AWS Well-Architected運用                |                                              |                                                            |                                  |  |
+# AWS Well-Architected　Runbook　Index
+
+| 大分類                |   中分類                                           |  Runbook名                                                          |                                  |  |
 |---------------------------------------|----------------------------------------------|------------------------------------------------------------|----------------------------------|--|
+| AWS Well-Architected運用                |                                              |                                                            |                                  |  |
 |                                       | 概要                                           |                                                            |                                  |  |
 |                                       |                                              | AWS Well-Architectedチームについて                                |                                  |  |
 |                                       |                                              | AWS Well-Architectedチームのミッション                              |                                  |  |
@@ -71,7 +74,6 @@
 |                                       | AWS 学習資料の作成                                  |                                                            |                                  |  |
 |                                       |                                              | 学習資料更新フロー                                                  |                                  |  |
 |                                       |                                              | 学習資料作成                                                     |                                  |  |
-|                                       |                                              |                                                            | コスト管理                            |  |
 |                                       |                                              | 学習資料発信                                                     |                                  |  |
 | AWS Well-Architected Partner Progam更新 |                                              |                                                            |                                  |  |
 |                                       | 概要                                           |                                                            |                                  |  |
@@ -80,26 +82,14 @@
 |                                       |                                              | AWS Well-Architected Partner更新フロー                          |                                  |  |
 |                                       | 維持条件確認                                       |                                                            |                                  |  |
 |                                       |                                              | AdvancedまたはPremierティアコンサルティングパートナー                         |                                  |  |
-|                                       |                                              |                                                            | AWS Partner Network (APN) ティア確認  |  |
 |                                       |                                              | 貴社エグゼクティブスポンサー（SVP以上）の同意                                   |                                  |  |
-|                                       |                                              |                                                            | エグゼクティブスポンサー (SVP以上）確認           |  |
 |                                       |                                              | 最低2名のWell-Architected Lead                                 |                                  |  |
-|                                       |                                              |                                                            | Well-Architected Lead確認          |  |
 |                                       |                                              | Business integration checklistとIntegration project planの作成 |                                  |  |
-|                                       |                                              |                                                            | Business integration checklist作成 |  |
-|                                       |                                              |                                                            | Integration project plan作成       |  |
 |                                       |                                              | AWS Well Architectedを含めたGo-To-Market資料の作成                  |                                  |  |
-|                                       |                                              |                                                            | 最新のGo-To-Market資料の取得             |  |
 |                                       |                                              | 1年間で20件以上の新規Workload レビュー、60件以上のHigh-Risk Issues改善         |                                  |  |
-|                                       |                                              |                                                            | Workload件数確認                     |  |
-|                                       |                                              |                                                            | High-Risk Issues改善件数確認           |  |
 |                                       | 更新手続き                                        |                                                            |                                  |  |
 |                                       |                                              | AWS Japan担当者確認                                             |                                  |  |
 |                                       |                                              | 対象Workload登録                                               |                                  |  |
 |                                       |                                              | AWS Well-Architected Partner情報更新                           |                                  |  |
 |                                       |                                              | ドキュメント提示                                                   |                                  |  |
 |                                       |                                              | 更新完了確認                                                     |
-				
-				
-				
-				
