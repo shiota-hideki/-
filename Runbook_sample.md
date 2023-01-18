@@ -37,39 +37,38 @@
 3. MFAコードを入力し、`送信`をクリックする。
 4. マネジメントコンソール上部に、**AWS マネジメントコンソール**を大きく表示されることを確認する。
 
-
 ### 2. ConfigRules情報取得作業
 
-7.2.1.「AWSマネジメントコンソール」画面上部のナビゲーションバーより「CloudShell」を検索し、CloudShellコンソール画面を表示する。  
-![ConfigRules情報収集](./image/ConfigRules情報収集001.png)
-7.2.2. CloudShellの画面が表示されることを確認する。  
-![ConfigRules情報収集](./image/ConfigRules情報収集002.png)
-7.2.3.「CloudShell」にて以下のコマンドを実行する。  
+1. 「AWSマネジメントコンソール」画面上部のナビゲーションバーより「CloudShell」を検索し、CloudShellコンソール画面を表示する。  
+ ![ConfigRules情報収集](./image/ConfigRules情報収集001.png)
+    1. CloudShellの画面が表示されることを確認する。  
+ ![ConfigRules情報収集](./image/ConfigRules情報収集002.png)
+    2. CloudShellにて以下のコマンドを実行する。  
 
-```txt
-aws configservice describe-compliance-by-config-rule \
---query "ComplianceByConfigRules[].[\
-ConfigRuleName,Compliance.ComplianceType,\
-Compliance.ComplianceContributorCount.CappedCount,\
-Compliance.ComplianceContributorCount.CapExceeded]" \
---compliance-types NON_COMPLIANT \
---output text | column -t  |grep conformance-pack > configrules.txt
-```  
+    ```txt
+    aws configservice describe-compliance-by-config-rule \
+    --query "ComplianceByConfigRules[].[\
+    ConfigRuleName,Compliance.ComplianceType,\
+    Compliance.ComplianceContributorCount.CappedCount,\
+    Compliance.ComplianceContributorCount.CapExceeded]" \
+    --compliance-types NON_COMPLIANT \
+    --output text | column -t  |grep conformance-pack > configrules.txt
+    ```
 
-　7.2.3.1. エラーとならないことを確認する。  
-
-7.2.4. 画面右上の「Actions」ボタンを押下し、「Download file」を押下する。
-　7.2.4.1.「Download file」詳細画面が表示されることを確認する。
-7.2.5.「Download file」詳細画面に「configrules.txt」を入力し、「Download」ボタンを押下する。
-　7.2.5.1. ダウンロードしたファイルが保存されていることを確認する。
-　7.2.5.2. ファイル名が「ConfigRules.txt」となっていること。
+   3. エラーとならないことを確認する。
   
-  ```txt
-  ※「Download」ボタンを押下した際にエラーとなる場合、  
-  configrules.txtの中身が空で0バイトとなっていること考えられます。  
-  「cat」コマンドなどでconfigrules.txtファイルの中身をご確認ください。
-  ```
+2. 画面右上の「Actions」ボタンを押下し、「Download file」を押下する。
+    1. 「Download file」詳細画面が表示されることを確認する。
 
-7.2.6. 保存したファイルを開いて確認する。ファイル名「ConfigRules.txt」を開く。
-　 7.2.6.1. 選択した内容が保存されていることを確認する。
-　 7.2.6.2. ファイル中に「NON_COMPLIAN」の文字が存在することを確認する。
+3. 「Download file」詳細画面に「configrules.txt」を入力し、「Download」ボタンを押下する。
+    1. ダウンロードしたファイルが保存されていることを確認する。
+    2. ファイル名が「ConfigRules.txt」となっていること。
+    ```txt
+    ※「Download」ボタンを押下した際にエラーとなる場合、  
+    conf  igrules.txtの中身が空で0バイトとなっていること考えられます。  
+    「cat」コマンドなどでconfigrules.txtファイルの中身をご確認ください。
+    ```
+
+4. 保存したファイルを開いて確認する。ファイル名「ConfigRules.txt」を開く。
+    1. 選択した内容が保存されていることを確認する。
+    2. ファイル中に「NON_COMPLIAN」の文字が存在することを確認する。
