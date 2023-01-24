@@ -44,9 +44,9 @@ DTS運用チーム
      ```  
 
 2. 画面右上の「Actions」ボタンを押下し、「Download file」を押下する。
- ![ConfigRules情報収集](./images/ConfigRules情報収集003.png)
+    ![ConfigRules情報収集](./images/ConfigRules情報収集003.png)
     1. 「Download file」詳細画面が表示されることを確認する。
- ![ConfigRules情報収集](./images/ConfigRules情報収集004.png)
+        ![ConfigRules情報収集](./images/ConfigRules情報収集004.png)
 
 3. 「Download file」詳細画面に「configrules.txt」を入力し、「Download」ボタンを押下する。
 ![ConfigRules情報収集](./images/ConfigRules情報収集005.png)
