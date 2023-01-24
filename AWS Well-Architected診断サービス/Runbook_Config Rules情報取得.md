@@ -43,7 +43,7 @@ DTS運用チーム
       --output text | column -t  |grep conformance-pack > configrules.txt
      ```  
 
-2. 画面右上の「Actions」ボタンを押下し、「Download file」を押下する。
+2. 画面右上の「Actions」ボタンを押下し、「Download file」を押下する。  
     ![ConfigRules情報収集](./images/ConfigRules情報収集003.png)
     1. 「Download file」詳細画面が表示されることを確認する。
         ![ConfigRules情報収集](./images/ConfigRules情報収集004.png)
