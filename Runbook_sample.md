@@ -1,19 +1,18 @@
 <!-- omit in toc -->
 # 2023-01-16  ConfigRules情報収集
 
-```txt
-************* 概要 **************
 本資料は、Well-Architecedと連携するConfigRulesの情報を
 入手し、テキストファイルへ出力、格納するための操作手順である。
-```
 
 ## 作業者（チーム名）
+
 DTS運用チーム
+
 ## 前提条件、制約事項
 
 - Config適合パックが1件以上デプロイされていること。
 
-## 手順書[想定作業時間: 10分]
+## 手順[想定作業時間: 10分]
 
 ### 1. ログイン
 
@@ -43,21 +42,20 @@ DTS運用チーム
       --output text | column -t  |grep conformance-pack > configrules.txt
      ```  
 
-    3. エラーとならないことを確認する。
 2. 画面右上の「Actions」ボタンを押下し、「Download file」を押下する。
     1. 「Download file」詳細画面が表示されることを確認する。
 3. 「Download file」詳細画面に「configrules.txt」を入力し、「Download」ボタンを押下する。
     1. ダウンロードしたファイルが保存されていることを確認する。
     2. ファイル名が「ConfigRules.txt」となっていること。
 
-     ```txt
      ※「Download」ボタンを押下した際にエラーとなる場合、  
      conf  igrules.txtの中身が空で0バイトとなっていること考えられます。  
      「cat」コマンドなどでconfigrules.txtファイルの中身をご確認ください。
-     ```
 
 4. 保存したファイルを開いて確認する。ファイル名「ConfigRules.txt」を開く。
     1. 選択した内容が保存されていることを確認する。
     2. ファイル中に「NON_COMPLIAN」の文字が存在することを確認する。
   
 ## 参考情報
+
+公式出典のリンクを記載する
