@@ -28,7 +28,7 @@ SecurityHubの情報をテキストファイルへ出力するための操作手
         ![SecurityHub情報収集](./images/SecurityHub情報収集003.png)  
      3.「セキュリティ基準」欄より、『AWS 基礎セキュリティのベストプラクティス v1.0.0を有効化」のみにチェックを入れた状態で「Security Hubの有効化」を選択する。  
         ![SecurityHub情報収集](./images/SecurityHub情報収集004.png)  
-        ![SecurityHub情報収集](./images/SecurityHub情報収集005.png)
+        ![SecurityHub情報収集](./images/SecurityHub情報収集005.png)  
      4.Security Hubの概要画面（ダッシュボード）が表示されること。  
         ![SecurityHub情報収集](./images/SecurityHub情報収集006.png)  
      5. 左ペインより「セキュリティ基準」を選択する。  
@@ -56,7 +56,7 @@ SecurityHubの情報をテキストファイルへ出力するための操作手
 
 ### 4. Security Hub 無効化
 
-1. 「AWSマネジメントコンソール」画面上部のナビゲーションバーより「Security Hub」を検索し、Security Hubコンソール画面を表示する。  
+1. AWSマネジメントコンソール」画面上部のナビゲーションバーより「Security Hub」を検索し、Security Hubコンソール画面を表示する。  
  ![SecurityHub情報収集](./images/SecurityHub情報収集021.png)  
      1. 左ペインより「設定」を選択し、「設定」画面の「一般」タブを選択する。  
         ![SecurityHub情報収集](./images/SecurityHub情報収集022.png)  
