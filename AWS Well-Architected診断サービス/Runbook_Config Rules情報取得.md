@@ -1,19 +1,14 @@
 <!-- omit in toc -->
 # 2023-01-16  ConfigRules情報収集
 
-```txt
-************* 概要 **************
 本資料は、Well-Architecedと連携するConfigRulesの情報を
 入手し、テキストファイルへ出力、格納するための操作手順である。
-```
-
-## 作業者（チーム名）
 
 ## 前提条件、制約事項
 
 - Config適合パックが1件以上デプロイされていること。
 
-## 手順書[想定作業時間: 10分]
+## 手順[想定作業時間: 10分]
 
 ### 1. ログイン
 
@@ -53,11 +48,9 @@
     1. ダウンロードしたファイルが保存されていることを確認する。
     2. ファイル名が「ConfigRules.txt」となっていること。
 
-         ```txt
          ※「Download」ボタンを押下した際にエラーとなる場合、  
          conf  igrules.txtの中身が空で0バイトとなっていること考えられます。  
          「cat」コマンドなどでconfigrules.txtファイルの中身をご確認ください。
-         ```
 
     3. ファイル名と格納場所を選択し、「保存」ボタンを押下する。
      ![ConfigRules情報収集](./images/ConfigRules情報収集006.png)
@@ -68,3 +61,5 @@
     2. ファイル中に「NON_COMPLIAN」の文字が存在することを確認する。
   
 ## 参考情報
+
+https://docs.aws.amazon.com/cli/latest/reference/configservice/describe-compliance-by-config-rule.html
