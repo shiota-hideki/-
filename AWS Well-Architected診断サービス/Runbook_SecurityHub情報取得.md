@@ -58,7 +58,7 @@ SecurityHubの情報をテキストファイルへ出力するための操作手
 
 1. AWSマネジメントコンソール」画面上部のナビゲーションバーより「Security Hub」を検索し、Security Hubコンソール画面を表示する。  
  ![SecurityHub情報収集](./images/SecurityHub情報収集021.png)  
-     1. 左ペインより「設定」を選択し、「設定」画面の「一般」タブを選択する。  
+     1.左ペインより「設定」を選択し、「設定」画面の「一般」タブを選択する。  
         ![SecurityHub情報収集](./images/SecurityHub情報収集022.png)  
      2.「一般」タブを選択し、「AWS Security Hubの無効化」欄の「AWS Security Hubの無効化」を選択する。  
         ![SecurityHub情報収集](./images/SecurityHub情報収集023.png)  
