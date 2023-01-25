@@ -62,4 +62,5 @@
   
 ## 参考情報
 
+[describe-compliance-by-config-rule]文を使用したConfigRules情報収集
 https://docs.aws.amazon.com/cli/latest/reference/configservice/describe-compliance-by-config-rule.html
