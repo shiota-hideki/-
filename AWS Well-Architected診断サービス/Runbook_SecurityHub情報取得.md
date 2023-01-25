@@ -1,8 +1,8 @@
 <!-- omit in toc -->
 # 2023-01-25  SecurityHub情報収集
 
-本資料は、Well-Architecedと連携するSecurityHubの情報を
-入手し、テキストファイルへ出力、格納するための操作手順である。
+本資料は、Well-Architecedと連携するSecurityHubの有効化、無効化、および
+SecurityHubの情報をテキストファイルへ出力するための操作手順である。
 
 ## 前提条件、制約事項
 
@@ -24,17 +24,17 @@
  ![SecurityHub情報収集](./images/SecurityHub情報収集001.png)
      1.「Security Hubに移動」を選択する。  
         ![SecurityHub情報収集](./images/SecurityHub情報収集002.png)
-     2.「AWS Security Hubの有効化」画面が表示されること。
+     2.「AWS Security Hubの有効化」画面が表示されること。  
         ![SecurityHub情報収集](./images/SecurityHub情報収集003.png)
-     3.「セキュリティ基準」欄より、『AWS 基礎セキュリティのベストプラクティス v1.0.0を有効化」のみにチェックを入れた状態で「Security Hubの有効化」を選択する。
+     3.「セキュリティ基準」欄より、『AWS 基礎セキュリティのベストプラクティス v1.0.0を有効化」のみにチェックを入れた状態で「Security Hubの有効化」を選択する。  
         ![SecurityHub情報収集](./images/SecurityHub情報収集004.png)
         ![SecurityHub情報収集](./images/SecurityHub情報収集005.png)
-     4.Security Hubの概要画面（ダッシュボード）が表示されること。
+     4.Security Hubの概要画面（ダッシュボード）が表示されること。  
         ![SecurityHub情報収集](./images/SecurityHub情報収集006.png)
      5. 左ペインより「セキュリティ基準」を選択する。
-     6.「セキュリティ基準」画面が表示され、「AWS 基礎セキュリティのベストプラクティス v1.0.0」のみ有効化されていること。
+     6.「セキュリティ基準」画面が表示され、「AWS 基礎セキュリティのベストプラクティス v1.0.0」のみ有効化されていること。  
         ![SecurityHub情報収集](./images/SecurityHub情報収集007.png)
-     7. ※有効化には数分時間がかかるため以下画面が表示される場合がありますが、数分後に画面更新し確認すること。
+     7. ※有効化には数分時間がかかるため以下画面が表示される場合がありますが、数分後に画面更新し確認すること。  
         ![SecurityHub情報収集](./images/SecurityHub情報収集008.png)
   
 ### 3. Security Hub情報取得作業
