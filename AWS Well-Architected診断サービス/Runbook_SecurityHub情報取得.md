@@ -69,9 +69,9 @@ SecurityHubの情報をテキストファイルへ出力するための操作手
 
 ### 参考情報
 
-Security Hub有効化
-<https://docs.aws.amazon.com/ja_jp/securityhub/latest/userguide/securityhub-enable.html>
-Security Hub情報取得
-<https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-view-controls.html#securityhub-standards-download-controls>
-Security Hub無効化
-<https://docs.aws.amazon.com/ja_jp/securityhub/latest/userguide/securityhub-disable.html>
+Security Hub有効化  
+<https://docs.aws.amazon.com/ja_jp/securityhub/latest/userguide/securityhub-enable.html>  
+Security Hub情報取得  
+<https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-view-controls.html#securityhub-standards-download-controls>  
+Security Hub無効化  
+<https://docs.aws.amazon.com/ja_jp/securityhub/latest/userguide/securityhub-disable.html>  
