@@ -46,19 +46,19 @@ st->tsk1->tsk2->tsk3->en
     2.「AWS S3 設定」画面が表示されること。  
  ![記録用S3バケット作成](./images/SecurityHub有効化003.png)  
     3.「一般的な設定」は下記を選択する。  
-    - 「バケット名」→ 任意に命名。
-    - 「AWSリージョン」→「東京」を選択する。
+    - 「バケット名」→ 任意に命名。  
+    - 「AWSリージョン」→「東京」を選択する。  
  ![記録用S3バケット作成](./images/SecurityHub有効化004.png)  
 
-    4.「オブジェクト所有者」は下記を選択する。
-    - 「ACL無効(推奨)」を選択する。
+    4.「オブジェクト所有者」は下記を選択する。  
+    - 「ACL無効(推奨)」を選択する。  
  ![記録用S3バケット作成](./images/SecurityHub有効化005.png)  
 
     5.「このバケットのブロックパブリックアクセス設定」を選択する。
     - 規定値のままとする。  
  ![記録用S3バケット作成](./images/SecurityHub有効化006.png)  
 
-    6.「バケットのバージョニング」「タグ」「デフォルト暗号」「詳細設定」は規定値のままとする。
+    6.「バケットのバージョニング」「タグ」「デフォルト暗号」「詳細設定」は規定値のままとする。  
  ![記録用S3バケット作成](./images/SecurityHub有効化007.png)  
     7.「バケットを作成」を押下する。
  ![記録用S3バケット作成](./images/SecurityHub有効化008.png)  
@@ -66,7 +66,7 @@ st->tsk1->tsk2->tsk3->en
     8.S3バケット作成完了。  
  ![記録用S3バケット作成](./images/SecurityHub有効化009.png)  </BR></BR>
 
-2. 「バケットポリシー」を設定する。「バケット」の画面より、上記で作成したバケットを選択する。
+2. 「バケットポリシー」を設定する。「バケット」の画面より、上記で作成したバケットを選択する。  
  ![記録用S3バケット作成](./images/SecurityHub有効化010.png)  
     1.「バケットの詳細画面」が表示されること。  
  ![記録用S3バケット作成](./images/SecurityHub有効化011.png)  
@@ -74,9 +74,9 @@ st->tsk1->tsk2->tsk3->en
  ![記録用S3バケット作成](./images/SecurityHub有効化012.png)  
     3.「バケットポリシー」の「編集」ボタンを押下すること。  
  ![記録用S3バケット作成](./images/SecurityHub有効化013.png)  
-    4.「バケットポリシーを編集」の編集箇所にバケットポリシーを入力する。
- ![記録用S3バケット作成](./images/SecurityHub有効化014.png)  
-    5.下記ポリシー内容を入力する。
+    4.「バケットポリシーを編集」の編集箇所にバケットポリシーを入力する。  
+ ![記録用S3バケット作成](./images/SecurityHub有効化014.png)    
+    5.下記ポリシー内容を入力する。  
 
     ```txt
       {
@@ -129,9 +129,9 @@ st->tsk1->tsk2->tsk3->en
       }
     ```  
 
-    6.「ポリシー内容」を入力すること。
+    6.「ポリシー内容」を入力すること。  
  ![記録用S3バケット作成](./images/SecurityHub有効化015.png)  
-    7.「変更の保存」を押下する。
+    7.「変更の保存」を押下する。  
  ![記録用S3バケット作成](./images/SecurityHub有効化016.png)  
 
     8.バケットポリシー変更完了。  
@@ -146,29 +146,29 @@ st->tsk1->tsk2->tsk3->en
     2.「AWS Config 設定」画面が表示されること。  
  ![AWS Config有効化](./images/SecurityHub有効化053.png)  
     3.一般設定は下記を選択する。  
-    - 「記録するリソースタイプ」→「このリージョンでサポートされているすべてのリソースを記録します」
-    - 「グローバルリソース (AWS IAM リソースなど) を含める」にチェックを入れる。
-    - 「AWS Config ロール」→「既存の AWS Config サービスにリンクされたロールを使用」
+    - 「記録するリソースタイプ」→「このリージョンでサポートされているすべてのリソースを記録します」  
+    - 「グローバルリソース (AWS IAM リソースなど) を含める」にチェックを入れる。  
+    - 「AWS Config ロール」→「既存の AWS Config サービスにリンクされたロールを使用」  
  ![AWS Config有効化](./images/SecurityHub有効化054.png)  
 
-    4.配信方法は下記を選択する。
-    - 「Amazon S3 バケット」→「アカウントからバケットを選択」を選択する。
+    4.配信方法は下記を選択する。  
+    - 「Amazon S3 バケット」→「アカウントからバケットを選択」を選択する。  
     - 「S3 バケット名」→任意のバケット名を入力  ※記録用S3バケットで作成したバケット名を指定する。  
-      ※ここでは例として「config-s3bucket-log」を入力する。
-    - 「Amazon SNS トピック」はチェックしない
+      ※ここでは例として「config-s3bucket-log」を入力する。  
+    - 「Amazon SNS トピック」はチェックしない。  
  ![AWS Config有効化](./images/SecurityHub有効化055.png)  
 
     5.「次へ」を押下する。  
  ![AWS Config有効化](./images/SecurityHub有効化056.png)  
 
-    6.「ルール」選択画面では何も選択せず、そのまま「次へ」を押下する。
+    6.「ルール」選択画面では何も選択せず、そのまま「次へ」を押下する。  
  ![AWS Config有効化](./images/SecurityHub有効化057.png)  
-    7.レビュー画面にて、すべてのリソースが「グローバルリソースを含む」であることと確認し、「確認」を押下する。
+    7.レビュー画面にて、すべてのリソースが「グローバルリソースを含む」であることと確認し、「確認」を押下する。  
  ![AWS Config有効化](./images/SecurityHub有効化058.png)  </BR></BR>
 
-2. AWS Config でリソースの記録が有効化となる。
+2. AWS Config でリソースの記録が有効化となる。  
  ![記録用S3バケット作成](./images/SecurityHub有効化059.png)  
-    1.AWS Config　ダッシュボードが表示されること。 
+    1.AWS Config　ダッシュボードが表示されること。  
  ![記録用S3バケット作成](./images/SecurityHub有効化060.png)  
 
 ### 5. AWS Security Hub 有効化
@@ -188,14 +188,14 @@ st->tsk1->tsk2->tsk3->en
      6.「セキュリティ基準」画面が表示され、「AWS 基礎セキュリティのベストプラクティス v1.0.0」のみ有効化されていること。  
         ![SecurityHub有効化](./images/SecurityHub有効化107.png)  
      7. ※有効化には数分時間がかかるため以下画面が表示される場合があるが、数分後に画面更新し確認すること。  
-        ![SecurityHub有効化](./images/SecurityHub有効化108.png)
+        ![SecurityHub有効化](./images/SecurityHub有効化108.png)  
   
 ### 参考情報
 
-Amazon S3 の開始方法
-<https://docs.aws.amazon.com/ja_jp/AmazonS3/latest/userguide/GetStartedWithS3.html>
-コンソールによる AWS Config の設定
-<https://docs.aws.amazon.com/ja_jp/config/latest/developerguide/gs-console.html>
+Amazon S3 の開始方法  
+<https://docs.aws.amazon.com/ja_jp/AmazonS3/latest/userguide/GetStartedWithS3.html>  
+コンソールによる AWS Config の設定  
+<https://docs.aws.amazon.com/ja_jp/config/latest/developerguide/gs-console.html>  
 Security Hub有効化  
 <https://docs.aws.amazon.com/ja_jp/securityhub/latest/userguide/securityhub-enable.html>  
 AWS Configの有効化に失敗します。どうすればよいですか  
