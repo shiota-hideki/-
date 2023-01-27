@@ -3,7 +3,7 @@
 
 当、手順書ではAWS　ConfigとAWS Security HubをWell-Architecedに
 連携した状態より、連携を解除する手順を記す。  
-解除手順は連携手順と逆の順番にて行う。 　
+無効化手順は有効化手順と逆の順番にて行う。 　
 
 ## SecurityHub無効化フロー図
 
@@ -38,8 +38,8 @@ st->tsk1->tsk2->tsk3->en
 
 1. 「AWSマネジメントコンソール」画面上部のナビゲーションバーより「Security Hub」を検索し、Security Hubコンソール画面を表示する。  
  ![SecurityHub無効化](./images/SecurityHub無効化101.png)  
-     1.左ペインより「設定」を選択し、「設定」画面の「一般」タブを選択する。 
-     「設定」画面が表示されること。 
+     1.左ペインより「設定」を選択し、「設定」画面の「一般」タブを選択する。  
+     「設定」画面が表示されること。  
         ![SecurityHub無効化](./images/SecurityHub無効化102.png)  
      2.「一般」タブを選択し、「AWS Security Hubの無効化」欄の「AWS Security Hubの無効化」を選択する。  
         ![SecurityHub無効化](./images/SecurityHub無効化103.png)  
@@ -47,21 +47,21 @@ st->tsk1->tsk2->tsk3->en
         ![SecurityHub無効化](./images/SecurityHub無効化104.png)  
      4.「AWS Security Hubの無効化」を選択する。  
         ![SecurityHub無効化](./images/SecurityHub無効化105.png)  
-     5. Security Hubの有効化前のコンソール画面が表示されること。
+     5. Security Hubの有効化前のコンソール画面が表示されること。  
         ![SecurityHub無効化](./images/SecurityHub無効化106.png)  
 
 ### 3. AWS Config無効化
 
 1. 「AWSマネジメントコンソール」画面上部のナビゲーションバーより「cloudshell」を検索し、cloudshellコンソール画面を表示する。  
  ![AWS Config無効化](./images/SecurityHub無効化051.png)  
-    1.現在設定されているConfigを確認する。
+    1.現在設定されているConfigを確認する。  
 
       ```txt
       aws configservice describe-delivery-channels --region ap-northeast-1
-      ```
+      ```  
 
       を入力し実行する。  
-      「記録用S3バケット名」画面が表示されること。
+      「記録用S3バケット名」画面が表示されること。  
  ![AWS Config無効化](./images/SecurityHub無効化052.png)  
     2.configを無効化する。
       下記コマンドをcloudshellより実行する。
@@ -87,12 +87,12 @@ st->tsk1->tsk2->tsk3->en
       ```
   
       を入力し実行する。  
-      「記録用S3バケット名」画面がなくなっていること。
+      「記録用S3バケット名」画面がなくなっていること。  
  ![AWS Config無効化](./images/SecurityHub無効化054.png)  
 
     5.「AWSマネジメントコンソール」画面上部のナビゲーションバーより「Config」を検索する。  
     Configコンソールに「AWS　Confugのセットアップ」が表示されること。  
-    AWS Config　ダッシュボードが表示できないこと。
+    AWS Config　ダッシュボードが表示できないこと。  
  ![AWS Config無効化](./images/SecurityHub無効化055.png)  
 
 ### 4. 記録用S3バケット削除
@@ -102,7 +102,7 @@ st->tsk1->tsk2->tsk3->en
     1.「バケットを作成」を選択する。  
  ![記録用S3バケット削除](./images/SecurityHub無効化002.png)  
     2.削除対象のバケット名左にあるラジオボタンを押下する。  
-     「空にする」ボタンが活性化するので押下する。
+     「空にする」ボタンが活性化するので押下する。  
  ![記録用S3バケット削除](./images/SecurityHub無効化003.png)  
     3.「バケットを空にする」の詳細画面が表示されること。  
  ![記録用S3バケット削除](./images/SecurityHub無効化004.png)  
@@ -115,17 +115,15 @@ st->tsk1->tsk2->tsk3->en
 
     6.左ペインより「バケット」を選択する。  
     削除対象のバケット名左にあるラジオボタンを押下する。  
-    「削除」ボタンが活性化するので押下する。
+    「削除」ボタンが活性化するので押下する。  
  ![記録用S3バケット削除](./images/SecurityHub無効化007.png)  
-    7.「バケットを削除」の詳細画面が表示されること。
+    7.「バケットを削除」の詳細画面が表示されること。  
  ![記録用S3バケット削除](./images/SecurityHub無効化008.png)  
 
     8.テキストボックスに削除対象のバケット名を入力すると、「バケットを削除」ボタンが活性化するので押下する。  
  ![記録用S3バケット削除](./images/SecurityHub無効化009.png)  
-    9.テキストボックスに削除対象のバケット名を入力すると、「バケットを削除」ボタンが活性化するので押下する。  
- ![記録用S3バケット削除](./images/SecurityHub無効化010.png)  
- </BR></BR>
-
+    9.バケットが削除されたこと。  
+ ![記録用S3バケット削除](./images/SecurityHub無効化010.png)  </BR></BR>
 
 ### 参考情報
 
